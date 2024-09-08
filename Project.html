@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness First</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .logo{
+            margin-left: 5px;
+            /* font-style: obliquefon; */
+            font-stretch: narrower;
+            font-size: larger;
+        }
+        .container {
+            border: 2px solid rgb(252, 252, 250);
+            margin-top: 80px;
+            margin-left: 80px;
+            padding: 30px 30px;
+            position: absolute;
+            display: inline-block;
+            width: 33%;
+            height:45%;
+            border-radius: 10px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline;
+            position: absolute;
+            left: 25px;
+            top: 20x;
+            width: 33%;
+            line-height: 25px;
+            font-size: larger;
+            font-weight: bold;
+
+        }
+
+        .right {
+            /* border: 2px solid rgb(207, 201, 201); */
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 50px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(33, 45, 217); */
+            display: block;
+            width: 55%;
+            margin: 20px auto;
+
+        }
+        html, body {
+            height: 100%; /* Ensure that both the HTML and body elements are 100% of the viewport height */
+            margin: 0;
+            padding: 0;
+          }
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg13.jpg') no-repeat center center;
+            background-size:cover; /* This scales the image to cover the entire window */
+            
+            color: antiquewhite;
+          }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px;
+            font-size: 25px;
+
+        }
+
+        .navbar li a:hover,.navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 130px;
+            /* border-image-width: 50%; */
+
+            /* margin-right: 10px; */
+
+        }
+
+        .left div {
+            text-align: start;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(247, 247, 242);
+            color: rgb(10, 7, 0);
+            padding: 5px 16px;
+            border-radius: 7px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(120, 84, 29);
+            color: black;
+            font-weight: bolder;
+        }
+        .form_group input{
+            font-size: larger;
+            text-align: center;
+            display: block;
+            width: 250px;
+            padding: 7px;
+            border: 2px solid black;
+            margin:auto;
+            margin-top: 5px;
+        }
+        .container h3{
+            text-align: center;
+        }
+        .container .btn{
+            display: block;
+            width: 250px;
+            margin:auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- Iam left -->
+            <img src="img/logo2.png" alt="">
+            <div class="logo">Fitness First</div>
+        </div>
+        <div class="mid">
+
+            <!-- Iam Mid -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Status</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+
+            <button class="btn">Help</button>
+            <button class="btn">Join</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the Hyderabad's Best Gym-<b>Fitness First</b> Now!</h3>
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                <input type="text" name="" placeholder="Enter Your Mobile No.">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
